@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AlgoByte - Segunda Práctica</title>
+    <link rel="stylesheet" href="../../static/styles/web.css">
+</head>
+
+<header>
+    <div class="header-logo-container">
+        <img class="header-logo-image" src="../../static/images/logo.webp">
+        <a class="navigation-link" href="../welcome.html">Home</a>
+    </div>
+    <nav class="main-navigation">
+        <a class="navigation-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">About</a>
+        <a class="navigation-link" href="https://github.com/druxorey/">Contact</a>
+        <a class="navigation-link" href="../../index.html">Logout</a>
+    </nav>
+</header>
+
+<body>
+
+    <div class="content-container">
+
+        <form id="quiz">
+            <h1>Cuestionario</h1>
+
+            <p class="question-text">Pregunta 1: ¿En una estructura de control condicional se puede colocar un 'else' sin un 'if' antes de él?</p>
+            <input class="radio-button" type="radio" name="q1" value="true"> Falso<br>
+            <input class="radio-button" type="radio" name="q1" value="false"> Verdadero<br>
+
+            <p class="question-text">Pregunta 2: ¿Puedes anidar un 'if' dentro de otro 'if'?</p>
+            <input class="radio-button" type="radio" name="q2" value="true"> Verdadero<br>
+            <input class="radio-button" type="radio" name="q2" value="false"> Falso<br>
+
+            <p class="question-text">Pregunta 3: ¿Cuál de los siguientes ejemplos es la forma correcta de escribir múltiples alternativas?</p>
+            <input class="radio-button" type="radio" name="q3" value="false"> elif<br>
+            <input class="radio-button" type="radio" name="q3" value="true"> else if<br>
+            <input class="radio-button" type="radio" name="q3" value="false"> or this<br>
+
+            <p class="question-text">Pregunta 4: ¿Cuál de los siguiente bucles lleva un contador integrado?</p>
+            <input class="radio-button" type="radio" name="q4" value="false"> while<br>
+            <input class="radio-button" type="radio" name="q4" value="false"> do while<br>
+            <input class="radio-button" type="radio" name="q4" value="true"> for<br>
+
+            <p class="question-text">Pregunta 5: Selecciona los ejemplos de condiciones bien escritos</p>
+            <input class="radio-button" type="checkbox" name="q5" value="true"> (int i = 2; i < 43; i++)<br>
+            <input class="radio-button" type="checkbox" name="q5" value="true"> (int i = 9; i == 4; i--)<br>
+            <input class="radio-button" type="checkbox" name="q5" value="false"> (int i = 9; i > 4; i++)<br>
+
+            <div class="button-container">
+                <input id="inputButton" type="button" value="VERIFICAR RESPUESTAS" onclick="validate()">
+            </div>
+
+        </form>
+
+        <script src="../../scripts/quiz.js"></script>
+
+        <div id="result">
+            <a class="button-container" href="third-lesson.html">
+                <button>IR A LA PRÁCTICA 3</button>
+            </a>
+        </div>
+
+        <div id="wrongMessage">
+            <p class="error-message"></p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2021 AlgoByte. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+

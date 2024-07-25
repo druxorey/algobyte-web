@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AlgoByte - Primera Lección</title>
+    <link rel="stylesheet" href="../../static/styles/web.css">
+</head>
+
+<header>
+    <div class="header-logo-container">
+        <img class="header-logo-image" src="../../static/images/logo.webp">
+        <a class="navigation-link" href="../welcome.html">Home</a>
+    </div>
+    <nav class="main-navigation">
+        <a class="navigation-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">About</a>
+        <a class="navigation-link" href="https://github.com/druxorey/">Contact</a>
+        <a class="navigation-link" href="../../index.html">Logout</a>
+    </nav>
+</header>
+
+<body>
+
+    <div class="content-container">
+
+        <h1>Variables, Constantes y Tipos de Datos</h1>
+        <p>En este capítulo, exploraremos cómo declarar y utilizar variables y constantes en Python. Estos conceptos son fundamentales para cualquier programador, ya que nos permiten almacenar y manipular datos en nuestros programas. A lo largo del texto, proporcionaré ejemplos de código real para ilustrar cada punto.</p>
+
+        <h2>¿Qué es una variable?</h2>
+        <p>Una <b>variable</b> en Python es un espacio de almacenamiento en la memoria que puede contener datos. Estos datos pueden modificarse durante la ejecución del programa. Las variables nos permiten trabajar con valores dinámicos y realizar cálculos.</p>
+
+        <h2>Declaración de Variables</h2>
+        <p>Para declarar una variable, especificamos el nombre de la variable seguido de un signo igual y el valor que queremos asignarle. La sintaxis general es:</p>
+
+        <img class="code-image" src="../../static/images/python/python-first-001.webp">
+
+        <p>Aquí hay algunos ejemplos de declaraciones de variables:</p>
+
+        <img class="code-image" src="../../static/images/python/python-first-002.webp">
+
+        <p>En el ejemplo anterior:</p>
+        <ul>
+        <li><code>edad</code> es una variable que almacena un entero.</li>
+        <li><code>salario</code> es una variable que almacena un número de punto flotante.</li>
+        <li><code>inicial</code> es una variable que almacena un carácter.</li>
+        <li><code>es_estudiante</code> es una variable booleana.</li>
+        </ul>
+
+        <h2>¿Qué es una constante?</h2>
+
+        <p>Una <b>constante</b> es un valor fijo que no cambia durante la ejecución del programa. En Python, las constantes no son soportadas de manera nativa como en otros lenguajes, pero por convención, se utilizan variables en mayúsculas para representarlas.</p>
+
+        <h3>Declaración de Constantes</h3>
+
+        <img class="code-image" src="../../static/images/python/python-first-003.webp">
+
+        <p>En este ejemplo, <code>PI</code> se define como una constante con el valor de 3.1416.</p>
+
+        <h2>¿Qué son los Datos?</h2>
+
+        <p>Los <b>datos</b> son valores que representan información. Pueden ser números, caracteres, texto, fechas o cualquier otra entidad que necesitemos en nuestros programas. Los datos son la materia prima con la que construimos soluciones informáticas.</p>
+
+        <p>En la programación, los <b>datos</b> son la esencia de cualquier aplicación. Representan información que se procesa, almacena y manipula. En Python, los datos se clasifican en varios tipos, incluyendo números, cadenas, listas, tuplas, conjuntos y diccionarios. Vamos a explorar cada uno de ellos en detalle.</p>
+
+        <h2>Tipos de Datos en Python</h2>
+
+        <p>Python tiene varios tipos de datos incorporados que se utilizan para representar los datos en los programas. Aquí están algunos de los más comunes:</p>
+
+        <ol>
+        <li><b>Números</b>: Python soporta varios tipos de números, incluyendo enteros (<code>int</code>), números de punto flotante (<code>float</code>), y números complejos (<code>complex</code>).</li>
+        <li><b>Cadenas</b>: Las cadenas (<code>str</code>) se utilizan para representar texto.</li>
+        <li><b>Listas</b>: Las listas (<code>list</code>) son colecciones ordenadas de elementos.</li>
+        <li><b>Tuplas</b>: Las tuplas (<code>tuple</code>) son colecciones ordenadas e inmutables de elementos.</li>
+        <li><b>Conjuntos</b>: Los conjuntos (<code>set</code>) son colecciones no ordenadas de elementos únicos.</li>
+        <li><b>Diccionarios</b>: Los diccionarios (<code>dict</code>) son colecciones no ordenadas de pares clave-valor.</li>
+        <li><b>Booleanos</b>: Los booleanos (<code>bool</code>) representan verdadero o falso.</li>
+        </ol>
+
+        <h2>Tipos de Datos Estructurados</h2>
+
+        <p>Los <b>tipos de datos estructurados</b> en Python incluyen listas, tuplas, conjuntos y diccionarios:</p>
+
+        <h3>Listas</h3>
+
+        <p>Las listas son colecciones ordenadas de elementos que pueden ser de diferentes tipos. Por ejemplo, una lista puede contener [1, "hola", 3.14, True].</p>
+
+        <img class="code-image" src="../../static/images/python/python-first-004.webp">
+
+        <h3>Tuplas</h3>
+
+        <p>Las tuplas son similares a las listas, pero son inmutables, lo que significa que no pueden ser modificadas una vez creadas. Por ejemplo, una tupla puede ser (1, "hola", 3.14, True).</p>
+
+        <img class="code-image" src="../../static/images/python/python-first-005.webp">
+
+        <h3>Conjuntos</h3>
+
+        <p>Los conjuntos son colecciones no ordenadas de elementos únicos. Por ejemplo, un conjunto puede ser {1, 2, 3, 4, 5}.</p>
+
+        <img class="code-image" src="../../static/images/python/python-first-006.webp">
+
+        <h3>Diccionarios</h3>
+
+        <p>Los diccionarios son colecciones no ordenadas de pares clave-valor. Por ejemplo, un diccionario puede ser {"nombre": "Juan", "edad": 30, "es_estudiante": True}.</p>
+
+        <img class="code-image" src="../../static/images/python/python-first-007.webp">
+
+        <h2>Diferencias entre Tipos de Datos en Python</h2>
+
+        <ul>
+        <li>Los <b>números</b>, <b>cadenas</b> y <b>booleanos</b> representan valores simples.</li>
+        <li>Las <b>listas</b>, <b>tuplas</b>, <b>conjuntos</b> y <b>diccionarios</b> son tipos de datos estructurados que pueden contener múltiples valores, que pueden ser de diferentes tipos.</li>
+        </ul>
+
+        <a class="button-container" href="first-practice.html">
+            <button>IR A LA PRÁCTICA</button>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>© 2021 AlgoByte. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

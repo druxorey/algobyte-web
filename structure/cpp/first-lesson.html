@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AlgoByte - Primera Lección</title>
+    <link rel="stylesheet" href="../../static/styles/web.css">
+</head>
+
+<header>
+    <div class="header-logo-container">
+        <img class="header-logo-image" src="../../static/images/logo.webp">
+        <a class="navigation-link" href="../welcome.html">Home</a>
+    </div>
+    <nav class="main-navigation">
+        <a class="navigation-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">About</a>
+        <a class="navigation-link" href="https://github.com/druxorey/">Contact</a>
+        <a class="navigation-link" href="../../index.html">Logout</a>
+    </nav>
+</header>
+
+<body>
+
+    <div class="content-container">
+
+        <h1>Variables, Constantes y Tipos de Datos</h1>
+
+        <p>En este capítulo, exploraremos cómo declarar y utilizar variables y constantes en C++. Estos conceptos son fundamentales para cualquier programador, ya que nos permiten almacenar y manipular datos en nuestros programas. A lo largo del texto, proporcionaré ejemplos de código real para ilustrar cada punto.</p>
+
+        <h2>¿Qué es una variable?</h2>
+
+        <p>Una <b>variable</b> en C++ es un espacio de almacenamiento en la memoria que puede contener datos. Estos datos pueden modificarse durante la ejecución del programa. Las variables nos permiten trabajar con valores dinámicos y realizar cálculos.</p>
+
+        <h2>Declaración de Variables</h2>
+
+        <p>Para declarar una variable, especificamos su tipo, seguido del nombre de la variable. Opcionalmente, podemos asignarle un valor inicial. La sintaxis general es:</p>
+
+        <img class="code-image" src="../../static/images/cpp/cpp-first-001.webp">
+
+        <p>Aquí hay algunos ejemplos de declaraciones de variables:</p>
+
+        <img class="code-image" src="../../static/images/cpp/cpp-first-002.webp">
+
+        <p>En el ejemplo anterior:</p>
+        <ul>
+        <li><code>int</code> declara una variable de tipo entero llamada <code>edad</code>.</li>
+        <li><code>double</code> declara una variable de tipo decimal llamada <code>salario</code>.</li>
+        <li><code>char</code> declara una variable de tipo carácter llamada <code>inicial</code>.</li>
+        <li><code>bool</code> declara una variable booleana llamada <code>es_estudiante</code>.</li>
+        </ul>
+
+        <h2>¿Qué es una constante?</h2>
+
+        <p>Una <b>constante</b> es un valor fijo que no cambia durante la ejecución del programa. En C++, podemos definir constantes utilizando <code>#define</code> o la palabra clave <code>const</code>.</p>
+
+        <h3>Uso de <code>#define</code></h3>
+
+        <img class="code-image" src="../../static/images/cpp/cpp-first-003.webp">
+
+        <p>En este ejemplo, <code>PI</code> se define como una constante con el valor de 3.1416.</p>
+
+        <h3>Uso de <code>const</code></h3>
+
+        <img class="code-image" src="../../static/images/cpp/cpp-first-004.webp">
+
+        <p>En este caso, <code>dias_en_semana</code> es una constante de tipo entero.</p>
+
+        <h2>¿Qué son los Datos?</h2>
+
+        <p>Los <b>datos</b> son valores que representan información. Pueden ser números, caracteres, texto, fechas o cualquier otra entidad que necesitemos en nuestros programas. Los datos son la materia prima con la que construimos soluciones informáticas.</p>
+
+        <p>En la programación, los <b>datos</b> son la esencia de cualquier aplicación. Representan información que se procesa, almacena y manipula. En C++, los datos se clasifican en dos categorías principales: <b>tipos de datos elementales</b> y <b>tipos de datos estructurados</b>. Vamos a explorar cada uno de ellos en detalle.</p>
+
+        <h2>Tipos de Datos Elementales</h2>
+
+        <p>Los <b>tipos de datos elementales</b> son los más básicos y se utilizan para representar valores simples. Aquí están algunos de los más comunes:</p>
+
+        <li><b>Números Enteros</b>: <code>int</code>: Representa enteros con signo (positivos o negativos).</li>
+
+        <li><b>Números de Punto Flotante</b>:
+        <ul>
+        <li><code>float</code>: Precisión simple (32 bits). Ejemplo:</li>
+        <li><code>double</code>: Precisión doble (64 bits). Mayor rango y precisión que <code>float</code>.</li>
+        </ul>
+        </li>
+
+        <li><b>Caracteres</b>: Utilizamos el tipo <code>char</code> para representar símbolos individuales.</li>
+
+        <li><b>Valores Booleanos</b>: Para representar verdadero o falso, usamos el tipo <code>bool</code>.</li>
+
+        <img class="code-image" src="../../static/images/cpp/cpp-first-005.webp">
+
+        <h2>Tipos de Datos Estructurados</h2>
+
+        <p>Los <b>tipos de datos estructurados</b> agrupan información más compleja. Se dividen en homogéneos y heterogéneos:</p>
+
+        <h3>Datos Homogéneos</h3>
+
+        <p>Son aquellos que contienen el mismo tipo de datos. Por ejemplo los arreglos (array), son colecciones de elementos del mismo tipo. Un array de enteros puede contener [1, 2, 3, 4, 5].</p>
+
+        <ol>
+        <li><b>Enumeraciones</b>: Las enumeraciones nos permiten agrupar constantes simbólicas. Ejemplo:</li>
+        </ol>
+
+        <img class="code-image" src="../../static/images/cpp/cpp-first-006.webp">
+
+        <ol start="2">
+        <li><b>Matrices (Arrays)</b>: Almacenan múltiples valores del mismo tipo. Ejemplo:</li>
+        </ol>
+
+        <img class="code-image" src="../../static/images/cpp/cpp-first-007.webp">
+
+        <ol start="3">
+        <li><b>Cadenas de Caracteres</b>: Para manejar texto, usamos arrays de caracteres. Ejemplo:</li>
+        </ol>
+
+        <img class="code-image" src="../../static/images/cpp/cpp-first-008.webp">
+
+        <h3>Datos Heterogéneos</h3>
+
+        <p>Son aquellos que pueden contener diferentes tipos de datos. Por ejemplo:</p>
+
+        <ol>
+        <li><b>Archivos</b>: Son conjuntos de datos almacenados en el disco duro que pueden contener diferentes tipos de datos, como texto, números, imágenes, etc.</li>
+        <li><b>Registros</b>: Son estructuras que pueden contener diferentes tipos de datos. Por ejemplo, un registro de un estudiante puede contener su nombre (cadena de texto), edad (entero) y calificaciones (arreglo de números).</li>
+        </ol>
+
+        <h2>Diferencias entre Elementales y Estructurados</h2>
+
+        <ul>
+        <li>Los <b>elementales</b> representan valores simples (números, caracteres, booleanos).</li>
+        <li>Los <b>estructurados</b> agrupan información más compleja (enumeraciones, matrices, cadenas).</li>
+        </ul>
+
+        <a class="button-container" href="first-practice.html">
+            <button>IR A LA PRÁCTICA</button>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>© 2021 AlgoByte. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

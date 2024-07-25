@@ -1,0 +1,162 @@
+@import url("styles.css");
+
+html {
+    background-color: var(--color-background-4);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--color-background-4);
+    color: var(--color-foreground-1);
+    border-radius: var(--border-radius-1);
+}
+
+a {
+    margin-left: 0.5rem;
+    transition: color var(--transition-speed) ease;
+}
+
+a:hover {
+    color: var(--color-pink-1);
+    transition: color var(--transition-speed) ease;
+}
+
+.background-image {
+    width: 100%;
+    align-items: center;
+    background-image: url('../images/login/background.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--border-radius-1);
+}
+
+.login-panel {
+    color: var(--color-foreground-1);
+    position: relative;
+    width: 70%;
+    transition: var(--transition-speed) ease;
+}
+
+.login-panel:hover {
+    width: 75%;
+    border-radius: var(--border-radius-1);
+    transition: var(--transition-speed) ease;
+}
+
+.header-text {
+    text-align: center;
+    font-size: 3rem;
+    padding: 4rem 0rem 0rem 0rem;
+}
+
+.login-form-content {
+    padding: 0rem 2rem 2rem 2rem;
+}
+
+#errorDisplay {
+    display: none;
+}
+
+.error-message {
+    text-align: center;
+    position: relative;
+    margin-inline: 1.5rem;
+    border: 0.15rem solid var(--color-red-2);
+    padding: 1rem;
+    background-color: var(--color-red-2);
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+.error-link {
+    color: var(--color-foreground-1);
+    transition: var(--transition-speed) ease;
+}
+
+.error-link:hover {
+    color: var(--color-foreground-1);
+    text-shadow: 0 0 0.15rem var(--color-foreground-2);
+    font-size: 1.05rem;
+    transition: var(--transition-speed) ease;
+}
+
+.submit-button {
+    background: var(--color-foreground-3);
+    color: var(--color-background-5);
+    border-radius: 10rem;
+    padding: 1rem 4rem 1rem 4rem;
+    transition: var(--transition-speed) ease;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+}
+
+.submit-button:hover {
+    background: var(--color-foreground-1);
+    padding: 1.2rem 4.2rem 1.2rem 4.2rem;
+    transition: var(--transition-speed) ease;
+}
+
+.account-request {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.input-field {
+    color: var(--color-foreground-2);
+    background: var(--color-background-3);
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 1rem 1rem 1rem 1rem;
+    border: 0.15rem solid var(--color-background-3);
+    width: 90%;
+    border-radius: 10rem;
+    transition: var(--transition-speed) ease;
+    border-style: solid;
+}
+
+.input-field:focus {
+    background: var(--color-background-2);
+    color: var(--color-foreground-1);
+    border: 0.15rem solid var(--color-foreground-3);
+    border-width: 0.22rem;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    transition: var(--transition-speed) ease;
+}
+
+.input-field::placeholder {
+    color: var(--color-foreground-3);
+    font-size: 1rem;
+    border-color: transparent;
+}
+
+.content-container {
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+@media (max-width: 930px) {
+    .background-image {
+        display: none;
+    }
+
+    .login-panel {
+        width: 100%;
+    }
+
+    .login-panel:hover {
+        width: 100%;
+    }
+}

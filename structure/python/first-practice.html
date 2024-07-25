@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AlgoByte - Primera Práctica</title>
+    <link rel="stylesheet" href="../../static/styles/web.css">
+</head>
+
+<header>
+    <div class="header-logo-container">
+        <img class="header-logo-image" src="../../static/images/logo.webp">
+        <a class="navigation-link" href="../welcome.html">Home</a>
+    </div>
+    <nav class="main-navigation">
+        <a class="navigation-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">About</a>
+        <a class="navigation-link" href="https://github.com/druxorey/">Contact</a>
+        <a class="navigation-link" href="../../index.html">Logout</a>
+    </nav>
+</header>
+
+<body>
+
+    <div class="content-container">
+
+        <form id="quiz">
+            <h1>Cuestionario</h1>
+
+            <p class="question-text">Pregunta 1: ¿Las variables en Python pueden cambiar su valor durante la ejecución del programa?</p>
+            <input class="radio-button" type="radio" name="q1" value="true"> Verdadero<br>
+            <input class="radio-button" type="radio" name="q1" value="false"> Falso<br>
+
+            <p class="question-text">Pregunta 2: ¿Una lista en Python puede almacenar al mismo tiempo int y char?</p>
+            <input class="radio-button" type="radio" name="q2" value="true"> Verdadero<br>
+            <input class="radio-button" type="radio" name="q2" value="false"> Falso<br>
+
+            <p class="question-text">Pregunta 3: ¿Cuál de los siguientes tipos de datos representa números enteros en Python?</p>
+            <input class="radio-button" type="radio" name="q3" value="false"> float<br>
+            <input class="radio-button" type="radio" name="q3" value="true"> int<br>
+            <input class="radio-button" type="radio" name="q3" value="false"> char<br>
+            <input class="radio-button" type="radio" name="q3" value="false"> double<br>
+
+            <p class="question-text">Pregunta 4: ¿Cómo se representan las constantes en Python?</p>
+            <input class="radio-button" type="radio" name="q4" value="false"> var<br>
+            <input class="radio-button" type="radio" name="q4" value="true"> Variables en mayúsculas<br>
+            <input class="radio-button" type="radio" name="q4" value="false"> nomod<br>
+            <input class="radio-button" type="radio" name="q4" value="false"> const<br>
+
+            <p class="question-text">Pregunta 5: ¿Cuáles de los siguientes son tipos de datos en Python?</p>
+            <input class="radio-button" type="checkbox" name="q5" value="false"> char<br>
+            <input class="radio-button" type="checkbox" name="q5" value="true"> str<br>
+            <input class="radio-button" type="checkbox" name="q5" value="true"> int<br>
+
+            <div class="button-container">
+                <input id="inputButton" type="button" value="VERIFICAR RESPUESTAS" onclick="validate()">
+            </div>
+
+        </form>
+
+        <script src="../../scripts/quiz.js"></script>
+
+        <div id="result">
+            <a class="button-container" href="second-lesson.html">
+                <button>IR A LA LECCIÓN 2</button>
+            </a>
+        </div>
+
+        <div id="wrongMessage">
+            <p class="error-message"></p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2021 AlgoByte. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+
