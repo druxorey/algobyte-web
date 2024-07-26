@@ -75,10 +75,14 @@ code {
     gap: 5rem;
 }
 
+.course-card-image {
+    height: 15rem;
+}
+
 .course-card {
     display: flex;
     flex-direction: column;
-    width: 30rem;
+    width: 20rem;
     text-align: center;
     background-color: var(--color-background-2);
     border-radius: var(--border-radius-1);
@@ -93,14 +97,15 @@ code {
 
 .course-image {
     align-self: center;
-    width: 30rem;
     margin: 1rem;
+    width: 30rem;
 }
 
 .course-title {
     color: var(--color-foreground-1);
     margin: 1rem 0rem 1rem 0rem;
     text-align: center;
+    font-size: 1.1rem;
 }
 
 .main-navigation {
