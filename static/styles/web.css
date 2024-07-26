@@ -111,6 +111,7 @@ code {
 
 .navigation-link {
     color: var(--color-foreground-1);
+    font-size: 1rem;
     transition: var(--transition-speed) ease;
     display: flex;
     align-items: center;
@@ -193,21 +194,8 @@ code {
     width: 1.2rem;
     height: 1.2rem;
     background-color: var(--color-background-3);
-    border: 1px solid #dcdcdc;
-    border-radius: 50%;
-    cursor: pointer;
-    margin-right: 1rem;
-    margin-left: 2rem;
-}
-
-.radio-button:checked {
-    background-color: var(--color-purple-2);
-    border: 1px solid var(--color-purple-2);
-}
-
-.radio-button:hover {
-    background-color: var(--color-purple-3);
-    border: 1px solid var(--color-purple-3);
+    border: 1rem solid var(--color-background-3);
+    margin: 0.5rem 2rem 0.5rem 2rem;
 }
 
 #inputButton {
