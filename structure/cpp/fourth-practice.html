@@ -23,8 +23,18 @@
 
     <div class="content-container">
 
+        <div id="timeOut">
+            <h1>¡Tiempo agotado!</h1>
+            <a class="button-container" href="fourth-lesson.html">
+                <button>REGRESAR A LA LECCIÓN 4</button>
+            </a>
+        </div>
+
         <form id="quiz">
             <h1>Cuestionario</h1>
+
+            <div id="timer"></div>
+            <script src="../../scripts/timer.js"></script>
 
             <p class="question-text">Pregunta 1: ¿La POO en C++ utiliza objetos para modelar la realidad y agrupa datos y comportamiento en una sola unidad.?</p>
             <input class="radio-button" type="radio" name="q1" value="true"> Verdadero<br>

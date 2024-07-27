@@ -145,6 +145,7 @@ code {
 .content-container {
     width: 40rem;
     display: flex;
+    min-height: calc(100vh - 17.4rem);
     gap: 1rem;
     margin: 10rem 0rem 4rem 0rem;
     flex-direction: column;
@@ -228,6 +229,19 @@ code {
 #wrongMessage {
     display: none;
     justify-content: center;
+}
+
+#timeOut{
+    display: none;
+    justify-content: center;
+}
+
+#timer {
+    height: 3rem;
+    text-align: center;
+    color: var(--color-purple-2);
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 

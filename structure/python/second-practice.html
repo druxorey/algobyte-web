@@ -23,8 +23,18 @@
 
     <div class="content-container">
 
+        <div id="timeOut">
+            <h1>¡Tiempo agotado!</h1>
+            <a class="button-container" href="second-lesson.html">
+                <button>REGRESAR A LA LECCIÓN 2</button>
+            </a>
+        </div>
+
         <form id="quiz">
             <h1>Cuestionario</h1>
+
+            <div id="timer"></div>
+            <script src="../../scripts/timer.js"></script>
 
             <p class="question-text">Pregunta 1: ¿En una estructura de control condicional se puede colocar un 'else' sin un 'if' antes de él?</p>
             <input class="radio-button" type="radio" name="q1" value="true"> Falso<br>

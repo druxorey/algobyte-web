@@ -23,8 +23,18 @@
 
     <div class="content-container">
 
+        <div id="timeOut">
+            <h1>¡Tiempo agotado!</h1>
+            <a class="button-container" href="third-lesson.html">
+                <button>REGRESAR A LA LECCIÓN 3</button>
+            </a>
+        </div>
+
         <form id="quiz">
             <h1>Cuestionario</h1>
+
+            <div id="timer"></div>
+            <script src="../../scripts/timer.js"></script>
 
             <p class="question-text">Pregunta 1: ¿Las funciones en C++ siempre retornan un valor al finalizar su ejecución?</p>
             <input class="radio-button" type="radio" name="q1" value="false"> Verdadero<br>
